@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      // 👉 Replace with your Play Store link
+      window.location.href = "https://play.google.com/store/apps/details?id=com.visiontek.solar&pcampaignid=web_share";
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      // 👉 Replace with your iOS App Store link
+      window.location.href = "https://apps.apple.com/in/app/visionteksolar/id6751489602";
+    } else {
+      // 👉 Optional: fallback to your website
+      window.location.href = "https://visiontek.co.in";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to your app...</p>
+</body>
+</html>
